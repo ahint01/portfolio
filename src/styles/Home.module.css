@@ -1,5 +1,23 @@
 /* src/styles/Home.module.css */
 
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%; /* Ensures images don't exceed their parent's width */
+  height: auto;   /* Maintains aspect ratio */
+  display: block; /* Prevents extra space below images */
+}
+
+p, h1, h2, h3, h4, h5, h6, a { /* Apply to elements that might contain long text */
+  word-wrap: break-word;    /* Older standard for breaking long words */
+  overflow-wrap: break-word; /* Modern standard */
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -40,6 +58,29 @@
   max-width: 1200px; /* Max width to keep content readable on large screens */
   margin: 0 auto; /* Center the main content area */
   width: 100%; /* Ensure it takes full width within its max-width */
+}
+
+/* Media query for smaller screens (e.g., typical phone size) */
+@media (max-width: 768px) {
+  .mainContent {
+    padding: 2rem 1rem; /* Reduce horizontal padding to 1rem (e.g., 16px) on mobile */
+  }
+
+  /* Optional: Adjust header/logo font sizes for better mobile fit */
+  .logo {
+    font-size: 2em; /* Smaller logo on mobile */
+  }
+  .tagline {
+    font-size: 1em; /* Smaller tagline on mobile */
+  }
+  .missionSection h2,
+  .projectsSection h2,
+  .contactSection h2 {
+    font-size: 1.8em; /* Smaller section headings on mobile */
+  }
+  .missionSection p {
+    font-size: 1em; /* Smaller paragraph text on mobile */
+  }
 }
 
 /* --- Section Styling (General) --- */

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles/Home.module.css';
-import Navbar from '../components/Navbar'; // Assuming you have a Navbar component
+import Navbar from '../components/Navbar';
 
 const Home: React.FC = () => {
   // Replace with your actual project data
@@ -37,15 +37,13 @@ const Home: React.FC = () => {
       </header>
 
       <main className={styles.mainContent}>
-        {/* Mission Statement Section */}
         <section className={styles.missionSection}>
           <h2>Our Mission</h2>
           <p>
-            At **A Hint Development**, we transform your ideas into powerful, user-friendly web applications. Our mission is to deliver innovative, high-quality software solutions that drive growth, enhance efficiency, and provide exceptional digital experiences for your business. We believe in clear communication, collaborative development, and exceeding expectations with every project.
+            At A Hint Development, we transform your ideas into powerful, user-friendly web applications. Our mission is to deliver innovative, high-quality software solutions that drive growth, enhance efficiency, and provide exceptional digital experiences for your business. We believe in clear communication, collaborative development, and exceeding expectations with every project.
           </p>
         </section>
 
-        {/* Projects Showcase Section */}
         <hr />
         <section className={styles.projectsSection}>
           <h2>Our Work - Coming Soon</h2>
@@ -65,7 +63,6 @@ const Home: React.FC = () => {
           </div> */}
         </section>
 
-        {/* Contact Section */}
         <hr />
         <section className={styles.contactSection}>
           <h2>Ready to Start Your Project?</h2>
