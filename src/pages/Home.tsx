@@ -40,7 +40,7 @@ const Home: React.FC = () => {
         <section className={styles.missionSection}>
           <h2>Our Mission</h2>
           <p>
-            At A Hint Development, we transform your ideas into powerful, user-friendly web applications. Our mission is to deliver innovative, high-quality software solutions that drive growth, enhance efficiency, and provide exceptional digital experiences for your business. We believe in clear communication, collaborative development, and exceeding expectations with every project.
+            At A Hint Development, we transform your ideas into powerful, user-friendly web applications. We believe in clear communication, collaborative development, and exceeding expectations with every project.
           </p>
         </section>
 

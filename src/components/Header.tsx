@@ -14,7 +14,7 @@ const Header: React.FC<HeaderProps> = () => {
         <div className={styles.textInfo}>
           <h1 className={styles.name}>Andrew Hinton</h1>
           <p className={styles.title}>Full Stack Engineer</p>
-          <p className={styles.hireMe}>Looking to hire me? Email me <a href="mailto:andrewhinton0@outlook.com">andrewhinton0@outlook.com</a></p>
+          <p className={styles.hireMe}>Looking to hire me? <a href="mailto:andrewhinton0@outlook.com">Email me</a></p>
         </div>
       </div>
       <div className={styles.socialLinks}>
