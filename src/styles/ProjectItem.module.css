@@ -1,0 +1,23 @@
+projectItem {
+  margin-bottom: 0.5rem;
+}
+
+.projectTitle {
+  font-size: 1.1rem;
+  color: #fff; /* White title */
+  margin-bottom: 0.3rem;
+}
+
+.projectTitleLink {
+  text-decoration: none; /* Remove underline from link */
+}
+
+.projectTitleLink:hover .projectTitle {
+  text-decoration: underline; /* Add underline on hover for links */
+}
+
+.projectDescription {
+  font-size: 0.9rem;
+  color: #aaa; /* Gray description text */
+  line-height: 1.4;
+}

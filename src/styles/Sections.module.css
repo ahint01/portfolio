@@ -1,0 +1,22 @@
+.section {
+  padding: 2rem 4rem; /* Match header padding for alignment */
+  background-color: #0d0d0d; /* Same as header, or slightly different if desired */
+  color: #fff;
+  border-bottom: 1px solid #222; /* Subtle separator */
+}
+
+.section:last-child {
+  border-bottom: none; /* No border for the last section */
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #eee;
+}
+
+.itemsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem; /* Space between project items */
+}

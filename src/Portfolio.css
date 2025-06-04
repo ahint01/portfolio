@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0d0d0d; /* Overall dark background */
+  color: #fff; /* Default text color */
+}
+
+.App {
+  max-width: 900px; /* Or a fixed width based on your design */
+  margin: 0 auto; /* Center the content */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Optional subtle shadow for the main container */
+}
+
+.main-content {
+  flex-grow: 1; /* Allows main content to fill available space */
+}

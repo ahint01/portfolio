@@ -1,0 +1,37 @@
+.navbar {
+  background-color: #1a1a1a; /* Slightly lighter dark background for contrast */
+  padding: 1rem 4rem; /* Match horizontal padding with header/sections */
+  border-radius: 0.5rem; /* Rounded corners */
+  margin: 0 1rem 1rem 1rem; /* Top margin 0, right/left 1rem, bottom 1rem to separate from content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.navList {
+  list-style: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the links */
+  gap: 2rem; /* Space between links */
+}
+
+.navLink {
+  color: #fff; /* White text for links */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.1rem;
+  font-weight: 500; /* Slightly bolder text */
+  padding: 0.5rem 1rem; /* Padding for click area */
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 0.3rem; /* Slightly rounded link background */
+}
+
+.navLink:hover {
+  color: #a0a0a0; /* Lighter gray on hover */
+  background-color: #2a2a2a; /* Subtle background on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.navLink:active {
+  transform: translateY(0); /* Reset on click */
+  background-color: #3a3a3a;
+}
