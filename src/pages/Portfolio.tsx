@@ -10,7 +10,7 @@ function Portfolio() {
   ];
 
   const pastProjects = [
-    { title: 'capperconnect.io', description: 'Connecting you to the top handicappers' },
+    { title: 'capperconnect.win', description: 'Connecting you to the top handicappers' },
   ];
 
   const freelanceWork = [

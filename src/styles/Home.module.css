@@ -1,122 +1,135 @@
 /* src/styles/Home.module.css */
 
-.coming-soon-container {
+.container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  text-align: center;
-  background-color: #f0f2f5; /* Light grey background */
-  color: #333; /* Dark grey text */
-  font-family: 'Arial', sans-serif; /* Example font */
-  padding: 20px;
-  box-sizing: border-box; /* Include padding in element's total width and height */
+  min-height: 100vh; /* Ensures the page takes full viewport height */
+  background-color: #f8f9fa; /* A very light, clean background */
+  color: #343a40; /* Standard dark text for readability */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, readable font */
+  line-height: 1.6;
 }
 
-.coming-soon-header {
-  margin-bottom: 30px;
+/* --- Header Section --- */
+.header {
+  background-color: #ffffff; /* White background for header */
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #e9ecef; /* Subtle bottom border */
+  text-align: center; /* Center align header content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
 }
 
 .logo {
-  font-size: 3em;
-  color: #007bff; /* Example brand color: blue */
-  margin-bottom: 10px;
+  font-size: 2.8em;
+  color: #007bff; /* Primary brand blue */
+  font-weight: 700; /* Bolder logo */
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px; /* Slightly tighter letter spacing */
 }
 
-.coming-soon-content {
-  max-width: 700px;
-  padding: 30px;
-  background-color: #ffffff; /* White content box */
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.coming-soon-content h2 {
-  font-size: 2.5em;
-  color: #007bff;
-  margin-bottom: 15px;
-}
-
-.coming-soon-content h3 {
-  font-size: 1.5em;
-  color: #555;
-  margin-bottom: 25px;
-}
-
-.coming-soon-content p {
-  font-size: 1.1em;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.launch-message {
-  font-style: italic;
-  color: #666;
-}
-
-.contact-section {
-  margin-top: 30px;
-  border-top: 1px solid #eee;
-  padding-top: 20px;
-}
-
-.contact-section h4 {
+.tagline {
   font-size: 1.3em;
-  color: #333;
-  margin-bottom: 15px;
+  color: #6c757d; /* Muted grey for tagline */
+  margin-top: 0.5rem;
 }
 
-.contact-button {
+/* --- Main Content Area --- */
+.mainContent {
+  flex-grow: 1; /* Allows main content to expand and push footer down */
+  padding: 3rem 2rem; /* Generous padding for sections */
+  max-width: 1200px; /* Max width to keep content readable on large screens */
+  margin: 0 auto; /* Center the main content area */
+  width: 100%; /* Ensure it takes full width within its max-width */
+}
+
+/* --- Section Styling (General) --- */
+.missionSection,
+.projectsSection,
+.contactSection {
+  background-color: #ffffff; /* White background for each content section */
+  border-radius: 8px; /* Slightly rounded corners */
+  padding: 2.5rem; /* Internal padding for content */
+  margin-bottom: 3rem; /* Space between sections */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* More prominent shadow for sections */
+  text-align: center; /* Center align text within sections */
+}
+
+.missionSection h2,
+.projectsSection h2,
+.contactSection h2 {
+  font-size: 2.4em;
+  color: #007bff; /* Consistent heading color */
+  margin-bottom: 1.5rem;
+  font-weight: 600; /* Semi-bold headings */
+}
+
+.missionSection p {
+  font-size: 1.15em;
+  color: #495057;
+  max-width: 900px; /* Max width for mission text for better readability */
+  margin: 0 auto; /* Center the paragraph */
+  line-height: 1.8; /* Improved line spacing for mission */
+}
+
+/* --- Projects Showcase Section --- */
+.projectsSection {
+  padding-bottom: 3.5rem; /* More padding at bottom for project grid */
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid columns */
+  gap: 2.5rem; /* Space between project cards */
+  margin-top: 2.5rem;
+}
+
+.projectCard {
+  background-color: #f8f9fa; /* Lighter background for cards */
+  border: 1px solid #e2e6ea; /* Subtle border */
+  border-radius: 8px;
+  overflow: hidden; /* Ensures image corners are rounded */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07); /* Card shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left; /* Align text within cards to the left */
+}
+
+.projectCard:hover {
+  transform: translateY(-8px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); /* Enhanced shadow on hover */
+}
+
+.projectImage {
+  width: 100%;
+  height: 220px; /* Fixed height for consistent image display */
+  object-fit: cover; /* Covers the area, cropping if necessary */
+  display: block; /* Removes extra space below image */
+  border-bottom: 1px solid #e9ecef; /* Separator below image */
+}
+
+.projectCard h3 {
+  font-size: 1.7em;
+  color: #343a40;
+  margin: 1.5rem 1.5rem 0.5rem 1.5rem; /* Padding for text inside card */
+}
+
+.projectCard p {
+  font-size: 1em;
+  color: #6c757d;
+  margin: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.projectLink {
   display: inline-block;
-  background-color: #28a745; /* Example brand color: green */
+  background-color: #28a744; /* Success green for project links */
   color: white;
-  padding: 12px 25px;
+  padding: 0.8rem 1.5rem;
   border-radius: 5px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
+  margin: 0 1.5rem 1.5rem 1.5rem; /* Margin for the button */
   transition: background-color 0.3s ease;
 }
 
-.contact-button:hover {
+.projectLink:hover {
   background-color: #218838;
-}
-
-.coming-soon-footer {
-  margin-top: 40px;
-  font-size: 0.9em;
-  color: #777;
-}
-
-/* Basic Responsive Adjustments */
-@media (max-width: 768px) {
-  .logo {
-    font-size: 2.5em;
-  }
-  .coming-soon-content h2 {
-    font-size: 2em;
-  }
-  .coming-soon-content h3 {
-    font-size: 1.2em;
-  }
-  .coming-soon-content {
-    padding: 20px;
-    margin: 0 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .logo {
-    font-size: 2em;
-  }
-  .coming-soon-content h2 {
-    font-size: 1.8em;
-  }
-  .coming-soon-content h3 {
-    font-size: 1em;
-  }
-  .contact-button {
-    padding: 10px 20px;
-    font-size: 0.9em;
-  }
 }
