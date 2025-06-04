@@ -1,18 +1,20 @@
+// App.tsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-import Home from './pages/Home'
-import Portfolio from './pages/Portfolio'
-
+// Make sure you import HashRouter here
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'; 
+import Home from './pages/Home';
+import Portfolio from './pages/Portfolio';
 import './index.css'; 
 
 const App: React.FC = () => {
   return (
-    <Router>
+    // And use it here
+    <Router> 
       <main>
         <Routes>
+          {/* Your routes remain the same */}
           <Route path="/" element={<Home />} />
-          <Route path="/portfolio" element={<Portfolio />} /> {/* Redirect all other paths to Home for now */}
+          <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
       </main>
     </Router>
