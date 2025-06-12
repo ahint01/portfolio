@@ -33,7 +33,7 @@ const Home: React.FC = () => {
       <header className={styles.header}>
         <Navbar />
         <h1 className={styles.logo}>A Hint Development</h1>
-        <p className={styles.tagline}>Your Vision, Our Code. Innovate with Software Solutions.</p>
+        <p className={styles.tagline}>Innovate with Software Solutions.</p>
       </header>
 
       <main className={styles.mainContent}>

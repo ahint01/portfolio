@@ -6,7 +6,8 @@ import Navbar from '../components/Navbar';
 
 function Portfolio() {
   const currentProjects = [
-    { title: 'InternetRuinsThings', description: 'Custom built clothing store web app' },
+    { title: 'InternetRuinsThings', description: 'Streetwear Shop' },
+    { title: 'PrintDash', description: 'No printer? No problem' },
   ];
 
   const pastProjects = [
@@ -15,7 +16,7 @@ function Portfolio() {
 
   const freelanceWork = [
     { title: 'A Hint Devleopment', description: 'Self Owned Web App Development Business' },
-    { title: 'Voice First Technology', description: 'Built interactive Amazon Alexa Skills' },
+    { title: 'Voice First Technology', description: 'Interactive Amazon Alexa Skills' },
   ];
 
   return (
