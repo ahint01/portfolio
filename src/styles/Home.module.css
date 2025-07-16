@@ -30,7 +30,7 @@ p, h1, h2, h3, h4, h5, h6, a { /* Apply to elements that might contain long text
 
 /* --- Header Section --- */
 .header {
-  background-color: #ffffff; /* White background for header */
+  background-color: #000000; /* White background for header */
   padding: 1.5rem 2rem;
   border-bottom: 1px solid #e9ecef; /* Subtle bottom border */
   text-align: center; /* Center align header content */
@@ -39,7 +39,7 @@ p, h1, h2, h3, h4, h5, h6, a { /* Apply to elements that might contain long text
 
 .logo {
   font-size: 2.8em;
-  color: #000000; 
+  color: #FFFFFF; 
   font-weight: 700; /* Bolder logo */
   margin-bottom: 0.5rem;
   letter-spacing: -0.5px; /* Slightly tighter letter spacing */
@@ -47,7 +47,7 @@ p, h1, h2, h3, h4, h5, h6, a { /* Apply to elements that might contain long text
 
 .tagline {
   font-size: 1.3em;
-  color: #6c757d; /* Muted grey for tagline */
+  color: #b4c3d1; /* Muted grey for tagline */
   margin-top: 0.5rem;
 }
 
@@ -87,7 +87,7 @@ p, h1, h2, h3, h4, h5, h6, a { /* Apply to elements that might contain long text
 .missionSection,
 .projectsSection,
 .contactSection {
-  background-color: #ffffff; /* White background for each content section */
+  background-color: #000000; /* White background for each content section */
   border-radius: 8px; /* Slightly rounded corners */
   padding: 2.5rem; /* Internal padding for content */
   margin-bottom: 3rem; /* Space between sections */
@@ -99,14 +99,15 @@ p, h1, h2, h3, h4, h5, h6, a { /* Apply to elements that might contain long text
 .projectsSection h2,
 .contactSection h2 {
   font-size: 2.4em;
-  color: #000000; /* Consistent heading color */
+  color: #FFFFFF; /* Consistent heading color */
   margin-bottom: 1.5rem;
   font-weight: 600; /* Semi-bold headings */
 }
 
-.missionSection p {
+.missionSection p, 
+.contactSection p{
   font-size: 1.15em;
-  color: #495057;
+  color: #ffffff;
   max-width: 900px; /* Max width for mission text for better readability */
   margin: 0 auto; /* Center the paragraph */
   line-height: 1.8; /* Improved line spacing for mission */
