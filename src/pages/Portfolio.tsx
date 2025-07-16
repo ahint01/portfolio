@@ -7,6 +7,7 @@ import Navbar from '../components/Navbar';
 function Portfolio() {
   const currentProjects = [
     { title: 'InternetRuinsThings', description: 'Streetwear Shop' },
+    { title: 'Superb Barbershop', description: 'Finest cuts in the city' },
     { title: 'PrintDash', description: 'No printer? No problem' },
   ];
 

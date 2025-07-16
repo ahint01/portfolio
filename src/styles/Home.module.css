@@ -22,7 +22,7 @@ p, h1, h2, h3, h4, h5, h6, a { /* Apply to elements that might contain long text
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Ensures the page takes full viewport height */
-  background-color: #f8f9fa; /* A very light, clean background */
+  background-color: #000000;
   color: #343a40; /* Standard dark text for readability */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, readable font */
   line-height: 1.6;
@@ -39,7 +39,7 @@ p, h1, h2, h3, h4, h5, h6, a { /* Apply to elements that might contain long text
 
 .logo {
   font-size: 2.8em;
-  color: #007bff; /* Primary brand blue */
+  color: #000000; 
   font-weight: 700; /* Bolder logo */
   margin-bottom: 0.5rem;
   letter-spacing: -0.5px; /* Slightly tighter letter spacing */
@@ -99,7 +99,7 @@ p, h1, h2, h3, h4, h5, h6, a { /* Apply to elements that might contain long text
 .projectsSection h2,
 .contactSection h2 {
   font-size: 2.4em;
-  color: #007bff; /* Consistent heading color */
+  color: #000000; /* Consistent heading color */
   margin-bottom: 1.5rem;
   font-weight: 600; /* Semi-bold headings */
 }
