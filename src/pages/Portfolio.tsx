@@ -5,12 +5,14 @@ import Section from '../components/Section';
 import Navbar from '../components/Navbar';
 
 function Portfolio() {
-  const currentProjects = [
+  const upcomingProjects = [
     { title: 'Capper Connect', description: 'Connecting you to the top handicappers' },
-    { title: 'InternetRuinsThings', description: 'Streetwear Shop' },
     { title: 'Superb Barbershop', description: 'Finest cuts in the city' },
-    { title: 'QuickDocs', description: 'No printer? No problem' },
   ];
+
+  const currentProjects = [
+    { title: 'InternetRuinsThings', description: 'Streetwear Shop', link: 'https://www.internetruinsthings.net' }
+  ]
 
   const freelanceWork = [
     { title: 'A Hint Devleopment', description: 'Secure, high-performance web applications' },
@@ -22,7 +24,8 @@ function Portfolio() {
       <Navbar />
       <Header />
       <main className="main-content">
-        <Section title="Coming Soon" items={currentProjects} />
+        <Section title="Coming Soon" items={upcomingProjects} />
+        <Section title="Projects" items={currentProjects} />
         <Section title="Startups" items={freelanceWork} />
       </main>
     </div>

@@ -4,7 +4,7 @@ import ProjectItem from '../components/ProjectItem';
 
 interface SectionProps {
   title: string;
-  items: { title: string; description: string; }[];
+  items: { title: string; description: string; link?: string}[];
 }
 
 const Section: React.FC<SectionProps> = ({ title, items }) => {
@@ -13,7 +13,7 @@ const Section: React.FC<SectionProps> = ({ title, items }) => {
       <h2 className={styles.sectionTitle}>{title}</h2>
       <div className={styles.itemsContainer}>
         {items.map((item, index) => (
-          <ProjectItem key={index} title={item.title} description={item.description} />
+          <ProjectItem key={index} title={item.title} description={item.description} link={item.link} />
         ))}
       </div>
     </section>
