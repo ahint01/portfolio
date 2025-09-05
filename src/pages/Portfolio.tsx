@@ -11,7 +11,7 @@ function Portfolio() {
   ];
 
   const currentProjects = [
-    { title: 'InternetRuinsThings', description: 'Streetwear Shop', link: 'https://www.internetruinsthings.net' }
+    { title: 'Internet Ruins Things', description: 'Streetwear Shop', link: 'https://www.internetruinsthings.net' }
   ]
 
   const freelanceWork = [

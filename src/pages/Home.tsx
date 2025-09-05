@@ -6,13 +6,13 @@ const Home: React.FC = () => {
   const projects = [
     {
       id: 1,
-      name: 'InternetRuinsThings',
+      name: 'Internet Ruins Things',
       description: 'Streetwear Shop',
       link: 'https://internetruinsthings.net',
     },
     {
       id: 2,
-      name: 'CapperConnect',
+      name: 'Capper Connect Demo',
       description: 'Connecting you to the top handicappers',
       link: 'https://youtu.be/SPNaL2Fjh1k',
     },
