@@ -10,6 +10,12 @@ const Home: React.FC = () => {
       description: 'Streetwear Shop',
       link: 'https://internetruinsthings.net',
     },
+    {
+      id: 2,
+      name: 'CapperConnect',
+      description: 'Connecting you to the top handicappers',
+      link: 'https://youtu.be/SPNaL2Fjh1k',
+    },
   ];
 
   return (

@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar';
 
 function Portfolio() {
   const upcomingProjects = [
-    { title: 'Capper Connect', description: 'Connecting you to the top handicappers' },
+    { title: 'Capper Connect', description: 'Connecting you to the top handicappers', link: 'https://youtu.be/SPNaL2Fjh1k' },
     { title: 'Superb Barbershop', description: 'Finest cuts in the city' },
   ];
 
